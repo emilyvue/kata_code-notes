@@ -1,3 +1,5 @@
+import sys
+
 
 def number_to_numeral(number):
     # def is defining a function called number_to_numeral
@@ -52,3 +54,19 @@ def number_to_numeral(number):
     return ''.join(s)
 # return takes the vaule inside the function and sends it back to the line
 # .join is taking 's' together into one string
+
+
+def main() -> int:
+    # def is defining a function called main
+    # int converts the specified value into an integer number
+    """Echo the input arguments to standard output"""
+    entered = input("enter a decimal number: ")
+    # entered is the name that will display the text
+    print(number_to_numeral(int(entered)))
+    # will covert the number and print the text in entered
+    return 0
+    # when the number entered is 0 then will end
+
+
+if __name__ == '__main__':
+    sys.exit(main())  # used to exit
